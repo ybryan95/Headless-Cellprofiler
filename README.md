@@ -46,8 +46,6 @@ Example output:
 
     /opt/anaconda3/envs/cellprofiler/bin/conda-unpack
 
-If conda-unpack is not found, skip this step.
-
 ---
 
 ## ▶️ Usage
