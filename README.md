@@ -1,18 +1,80 @@
-# Headless-Cellprofiler
-conda environment for running cellprofiler headlessly
+# Headless CellProfiler
 
+This package contains a pre-built conda environment for running CellProfiler headlessly using cppipe.
 
-This has been packaged with conda pack -n cellprofiler -o cellprofiler_env.tar.gz --ignore-missing-files
+---
 
-in your conda env folder (e.g. /opt/anaconda3/envs/)
+## 📦 Contents
+- cellprofiler_env.tar.gz — packaged conda environment  
+- (optional) pipeline files (.cppipe)  
+- (optional) input data  
 
-create a directory cellprofiler
-mkdir -p /opt/anaconda3/envs/cellprofiler
+---
 
-Then unpack the contents to the cellprofiler directory.
-tar -xzf cellprofiler_env.tar.gz -C /opt/anaconda3/envs/cellprofiler
-and then (confirm if conda-unpack exists)
-/opt/anaconda3/envs/cellprofiler/bin/conda-unpack
+## ⚙️ Requirements
+- macOS  
+- Conda installed (Anaconda / Miniconda / Miniforge)  
 
-(video attached) Then, from your base, try conda activate cellprofiler
-Then, cppipe
+---
+
+## 🚀 Installation
+
+### 1. Locate your conda environments directory
+
+Run:
+
+    conda info | grep "envs directories"
+
+Example output:
+
+    /opt/anaconda3/envs
+
+---
+
+### 2. Create the environment folder
+
+    mkdir -p /opt/anaconda3/envs/cellprofiler
+
+---
+
+### 3. Unpack the environment
+
+    tar -xzf cellprofiler_env.tar.gz -C /opt/anaconda3/envs/cellprofiler
+
+---
+
+### 4. Fix environment paths
+
+    /opt/anaconda3/envs/cellprofiler/bin/conda-unpack
+
+If conda-unpack is not found, skip this step.
+
+---
+
+## ▶️ Usage
+
+Activate the environment:
+
+    conda activate cellprofiler
+
+Run CellProfiler:
+
+    cppipe
+
+---
+
+## 📝 Notes
+- The install path (/opt/anaconda3/envs/) may differ depending on your conda setup  
+  (for example: ~/anaconda3/envs/ or ~/miniconda3/envs/)  
+- This environment is built for macOS and may not work on other operating systems  
+- If activation fails, try:
+
+    conda activate /opt/anaconda3/envs/cellprofiler  
+
+---
+
+## ✅ Summary
+1. Extract into your conda envs directory  
+2. Run conda-unpack  
+3. Activate with conda activate cellprofiler  
+4. Run cppipe
