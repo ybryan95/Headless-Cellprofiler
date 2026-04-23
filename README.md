@@ -6,8 +6,7 @@ This package contains a pre-built conda environment for running CellProfiler hea
 
 ## 📦 Contents
 - cellprofiler_env.tar.gz — packaged conda environment  
-- (optional) pipeline files (.cppipe)  
-- (optional) input data  
+
 
 ---
 
